@@ -16,10 +16,10 @@ from ui.main_window import MainWindow
 
 
 def main():
-    # ── Inicializa sistema de arquivos ──
+    # Inicializa sistema de arquivos 
     init_file_system()
 
-    # ── Verifica se precisa reiniciar como admin ──
+    # Verifica se precisa reiniciar como admin
     config = get_config()
     if config.get("start_as_admin") and sys.platform == "win32":
         try:
