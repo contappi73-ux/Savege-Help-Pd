@@ -38,7 +38,7 @@ def check_for_update() -> dict | None:
 
             return {
                 "version":      online_version,
-                "download_url": download_url,   # interno — não exibir
+                "download_url": download_url,   # interno  não exibir
                 "changelog":    changelog,
             }
     except Exception:
